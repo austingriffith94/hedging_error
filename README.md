@@ -1,6 +1,6 @@
 # hedging_error
 Hedging Error and Profit and Loss Calculations
-    This series of classes and code solves for the profit and loss and cumulative hedging error of a set of stock prices and options. In this case, there is are csvs provided that have historical values of the interest rates and the sec prices of Alphabet/Google stocks. Another csv provided has historical option prices for Alphabet/Google.
+    This series of classes and code solves for the profit and loss and cumulative hedging error of a set of stock prices and options. In this case, there is are csvs provided that have historical values of the interest rates and the sec prices of Alphabet/Google stocks. Another csv provided has historical option prices for Alphabet/Google. The output of the function is a results csv holds data per date. The spot price, value of the option, implied volatility, delta value, cumulative hedging error, and profit and loss are provided for the date range provided. The dates can be altered in the main.cpp code if the user desires.
 
 # functions explanation:
 ## stdnormalcdf.h and stdnormalcdf.cpp:
