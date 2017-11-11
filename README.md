@@ -7,10 +7,12 @@
     - profit and loss
     - cumulative hedging error
     for a given of a set of stock prices and options.
+
     There are csvs provided that have historical values.
     - interest rates
     - sec prices of Alphabet/Google stocks
     - option prices for Alphabet/Google
+
     The output of the function is a results csv.
     It holds:
     - spot price
@@ -20,6 +22,7 @@
     - cumulative hedging error
     - profit and loss
     all per the date range provided.
+
     The dates can be altered in the main.cpp code if the user desires.
 
 # functions explanation:
@@ -72,6 +75,7 @@
     - price vector
     - date vector
     each of which go from the specified start to end dates.
+
     The loop parses through the sec date vector, looking for a date that matches the start, end and expiration date.
     If that value is found, it gives the location of that date value.
     That location is used to section off the sec price and interest rate vectors from the start to the end values.
@@ -86,6 +90,7 @@
     - expiration date
     - strike price
     - option type
+
     A for loop runs through the op vectors, and compares the input values for the function.
     When all the values match, the location of the bid and offer values are found
     This location is the output, and used to find the value in the vector.
@@ -126,6 +131,7 @@
     - the call price vector
     - the option price vector
     - delta vector
+
     In the error function, a for loop starts at 1, and continues till the iteration count is met.
     At the start of the loop, the price series function is called, and creates a new price using the prior price value.
     The black class constructor creates two versions of the class, with the old price and new price.
