@@ -25,7 +25,7 @@
 
     The dates can be altered in the main.cpp code if the user desires.
 
-# functions explanation:
+# Class Explanations:
 ## stdnormalcdf.h and stdnormalcdf.cpp:
     This is the class that solves for the standard normal approximation of an input value.
     The class is initialized with only a single value.
@@ -45,7 +45,8 @@
     Put and call option functions are the Black-Scholes formula.
     In the calculation, the stdnormalcdf.h function is used to determine the standard normal approximation of d1 and d2.
     These values are then used with the initialized private variables to get the call or put value.
-    The delta is the absolute value of the standard normal approximation of d1 by the exponential of dividends and time to expiration.
+    The delta is the absolute value of the standard normal approximation of d1 by the exponential of
+    dividends and time to expiration.
     If dividends are zero, this can simply be viewed as the normal approximation of d1 for call options.
 
 ## reader.h and reader.cpp
@@ -55,7 +56,8 @@
     However, the latter is not used in the application of this assignment.
 
     The interest_input function using a simple while loop to read an interest file while the csv is open.
-    It takes a line from the csv, and taking the string from the start of the line till the first comma, not including the comma.
+    It takes a line from the csv, and taking the string from the start of the line till the first comma,
+    not including the comma.
     It then looks for a “-“, which is present in all date values, but not the header.
     It will read the date value and rate value, and updates the respective public vector with the value.
     This same logic is used in the sec_input class function, only it reads the sec csv file.
