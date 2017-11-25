@@ -25,8 +25,8 @@
 
     The dates can be altered in the main.cpp code if the user desires.
 
-# Class Explanations:
-## stdnormalcdf.h and stdnormalcdf.cpp:
+## Class Explanations:
+### stdnormalcdf.h and stdnormalcdf.cpp:
     This is the class that solves for the standard normal approximation of an input value.
     The class is initialized with only a single value.
     In this case, it will often be the d1 value from the Black-Scholes class.
@@ -37,7 +37,7 @@
     If the value was negative, it adjusts accordingly.
     The class can approximate the standard normal distribution of a value to within 6 decimal places.
 
-## black.h and black.cpp
+### black.h and black.cpp
     These files hold the Black-Scholes class and respective equations.
     The private variables are time to expiration, strike price, spot price, interest rate and volatility.
     The d1 value and d2 value are public, and solved immediately upon initialization of the class for ease of access.
@@ -49,7 +49,7 @@
     dividends and time to expiration.
     If dividends are zero, this can simply be viewed as the normal approximation of d1 for call options.
 
-## reader.h and reader.cpp
+### reader.h and reader.cpp
     The reader files are meant to read the csv, and hold the vector read locally to prevent clutter in the main file.
     Public variables include vectors that hold the values from the interest, sec_GOOG, and op_GOOG csv files.
     There is also the calculated days to expiration and days to trade.
@@ -97,7 +97,7 @@
     When all the values match, the location of the bid and offer values are found
     This location is the output, and used to find the value in the vector.
 
-## hedge.h and hedge.cpp
+### hedge.h and hedge.cpp
     The hedge class is used to determine the implied volatility, delta, hedge error and profit and loss for the portfolio.
     The class is initialized with a set of variables:
     - price vector (from the sec file)
